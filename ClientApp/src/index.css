@@ -3,4 +3,56 @@
     body {
         padding-top: 50px;
     }
+    .grid-container {
+        display: grid;
+    }
+}
+
+body 
+{
+    background-color: rgb(25, 25, 25);
+    color: rgba(255,255,255, 0.75);
+    font-family: 'Segoe UI';
+}
+
+.grid
+{
+    background-color: rgb(30, 30, 30);
+    display: grid;
+    grid-template-columns: 480px 480px 480px 480px;
+    grid-template-rows: 270px 270px 270px 270px;
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+    padding:20px;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+.cell
+{
+    background-color: rgb(40, 40, 40);
+    padding:10px;
+}
+.cell-a
+{
+}
+.cell-d
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.cell-b
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+.widget-container
+{
+    background-color: rgb(50, 50, 50);
+    padding:5px;
+    border-radius:3px;    
 }
